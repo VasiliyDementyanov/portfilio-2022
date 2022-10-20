@@ -1,1 +1,3 @@
+.certificates
 /cmd/back-end/dist
+/cmd/back-end/back-end

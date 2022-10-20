@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+  portfolio-2022:
+    container_name: portfolio-2022
+    build:
+      context: .
+      dockerfile: dockerfile
+      args:
+        DOCKER_USER: ${DOCKER_USER:?err}
+    restart: on-failure
+    image: portfolio-2022
+    user: ${DOCKER_USER:?err}
+    env_file: .env
+    environment:
+      - DOCKER_USER=${DOCKER_USER:?err}
+    ports:
+      - '443:443'
+    networks:
+      - portfolio-2022-network
+    command: /opt/portfolio-2022/back-end
+
+networks:
+  portfolio-2022-network:
+    driver: bridge
