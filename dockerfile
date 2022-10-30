@@ -13,14 +13,18 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o back-end .
 FROM node:16.18.0-alpine as reactBuilder
 LABEL maintainer="Dementyanov Vasiliy <vv.dementianov@gmail.com>"
 
-RUN mkdir -p /home/node/portfolio-2022/front-end
+COPY ./front-end/package.json /tmp/package.json
+COPY ./front-end/package-lock.json /tmp/package-lock.json
+RUN cd /tmp && npm install
+RUN mkdir -p /home/node/portfolio-2022/front-end && cp -a /tmp/node_modules /home/node/portfolio-2022/front-end/
+
 WORKDIR /home/node/portfolio-2022/front-end
 COPY ./front-end/ .
 RUN chown -R node:node /home/node/portfolio-2022
 
 USER node
 
-RUN npm install
+#RUN npm install
 RUN npm run build
 
 # run

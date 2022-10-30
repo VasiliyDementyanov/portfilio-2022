@@ -4,6 +4,9 @@ $(eval export $(shell sed -ne 's/ *#.*$$//; /./ s/=.*$$// p' .env))
 
 # local dev #
 
+run-front-end-dev:
+	npm run start --prefix front-end
+
 run-back-end-dev:
 	cd ./back-end/cmd/back-end && go run main.go
 
@@ -24,10 +27,10 @@ deploy-on-server: copy-on-server start-docker-on-server
 
 copy-on-server:	
 	sshpass -p "${SERVER_PASSWORD}" ssh -t ${SERVER_USER}@${SERVER_IP} -p ${SERVER_PORT} \
-	 'sudo mkdir -p /opt/portfolio-2022 && \
+	 'echo ${SERVER_PASSWORD} | sudo -S mkdir -p /opt/portfolio-2022 && \
 	  sudo chmod -R 755 /opt/portfolio-2022 && \
 		sudo chown -R ${SERVER_USER}:${SERVER_USER} /opt/portfolio-2022'
-	sshpass -p "${SERVER_PASSWORD}" rsync -ae "ssh -p ${SERVER_PORT}" ./ ${SERVER_USER}@${SERVER_IP}:/opt/portfolio-2022 --delete
+	sshpass -p "${SERVER_PASSWORD}" rsync -ae "ssh -p ${SERVER_PORT}" --exclude=front-end/node_modules --progress ./ ${SERVER_USER}@${SERVER_IP}:/opt/portfolio-2022 --delete
 
 start-docker-on-server:
 	sshpass -p "${SERVER_PASSWORD}" ssh -t ${SERVER_USER}@${SERVER_IP} -p ${SERVER_PORT} 'cd /opt/portfolio-2022;docker-compose down'
