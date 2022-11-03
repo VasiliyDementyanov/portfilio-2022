@@ -32,7 +32,7 @@ const Navbar: FC = () => {
       <nav className={navbarStyles.mainNav}>
         <ul className={isNavExpanded ? `${navbarStyles.active}` : ''}>
           <li>
-            <Link onClick={handleLinkClick} to="/">
+            <Link onClick={handleLinkClick} to="/education">
               education
             </Link>
           </li>

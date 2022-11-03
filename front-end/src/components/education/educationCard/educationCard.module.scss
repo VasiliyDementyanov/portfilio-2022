@@ -1,0 +1,57 @@
+@use '../../../utils/css-global/Theme-colors';
+@use '../../../utils/css-global/Paddings';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    justify-content: space-between;
+
+    background-color: Theme-colors.$background-color;
+    margin: 40px 0 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: Theme-colors.$main-text-color;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.universityName {
+    font-size: 54px;
+}
+
+.locationYears {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 32px;
+}
+
+.container li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    width: 60%;
+
+    font-size: 32px;
+    font-weight: normal;
+
+    position: relative;
+}
+
+.container li::before {
+    content: "";
+    position: absolute;
+    height: 60%;
+
+    top: 20%;
+    left: -8px;
+
+    display: inline-block;
+    border-right: 4px solid Theme-colors.$accent-two-color;
+  }

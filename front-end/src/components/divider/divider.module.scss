@@ -1,0 +1,7 @@
+@use '../../utils/css-global/Theme-colors';
+
+.divider {
+    height: 4px;
+    width: 50%;
+    background-color: Theme-colors.$accent-one-color;;
+  }
