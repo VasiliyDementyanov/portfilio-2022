@@ -36,7 +36,7 @@ const Welcome: FC = () => {
           <p>
             *this portfolio was created using
             <br /> React (TypeScript), Go
-            <br /> and deployed on VDS as a docker container
+            <br /> and deployed on Ubuntu VDS as a docker container
           </p>
         </div>
       </div>

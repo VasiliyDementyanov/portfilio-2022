@@ -1,0 +1,90 @@
+@use '../../../utils/css-global/Theme-colors';
+@use '../../../utils/css-global/Paddings';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    justify-content: space-between;
+
+    background-color: Theme-colors.$background-color;
+    margin: 40px 0 20px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: Theme-colors.$main-text-color;
+}
+
+.projectName {
+    font-size: 38px;
+}
+
+.locationDuration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+.thesesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.thesis {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.thesisLeft {
+    margin-left: 2%;
+    width: 24%;
+}
+
+.thesisLeft span {
+    font-size: 32px;
+    font-weight: normal;
+
+    position: relative;
+}
+
+.thesisLeft span::before {
+    content: "";
+    position: absolute;
+    height: 60%;
+
+    top: 20%;
+    left: -8px;
+
+    display: inline-block;
+    border-right: 4px solid Theme-colors.$accent-two-color;
+}
+
+.thesisRight {
+    width: 76%;
+}
+
+.thesesContainer li {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.tech:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.techHeader {
+    font-size: 32px;
+    font-weight: normal;
+}

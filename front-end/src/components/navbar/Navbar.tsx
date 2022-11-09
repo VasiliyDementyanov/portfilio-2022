@@ -37,7 +37,7 @@ const Navbar: FC = () => {
             </Link>
           </li>
           <li>
-            <Link onClick={handleLinkClick} to="/">
+            <Link onClick={handleLinkClick} to="/work">
               work
             </Link>
           </li>

@@ -1,0 +1,12 @@
+@use '../../utils/css-global/Theme-colors';
+@use '../../utils/css-global/Paddings';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: Theme-colors.$background-color;
+    padding: 24px Paddings.$main-restrict-container-desktop 0;
+    //min-height: 5rem;
+}
