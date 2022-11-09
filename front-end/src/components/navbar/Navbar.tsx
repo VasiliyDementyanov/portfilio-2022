@@ -47,7 +47,7 @@ const Navbar: FC = () => {
             </Link>
           </li>
           <li className={navbarStyles.contactMeSquare}>
-            <Link onClick={handleLinkClick} to="/">
+            <Link onClick={handleLinkClick} to="/contactme">
               contact me
             </Link>
           </li>
