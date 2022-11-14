@@ -7,23 +7,25 @@
   justify-content: space-between;
   background-color: Theme-colors.$background-color;
   padding: 16px Paddings.$main-restrict-container-desktop 0;
-  //min-height: 5rem;
 }
 
 .leftSide {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-grow: 1;
+
+  margin-top: 10vh;
+  gap: 8vh;
 }
 
 .greetings {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  gap: 8px;
 }
 
 .helloEng {
@@ -55,7 +57,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1;
+  gap: 20px;
 }
 
 .stackText {
@@ -63,13 +65,15 @@
   font-weight: bold;
   font-size: 56px;
   color: Theme-colors.$accent-one-color;
+  text-align: center;
 }
 
 .stackImages {
   display: flex;
-  flex-flow: row nowrap;
+  //flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 
 .stackImages img {
@@ -80,9 +84,8 @@
 }
 
 .footnote {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
+  position: absolute;
+  bottom: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-style: italic;
@@ -90,10 +93,14 @@
   color: Theme-colors.$main-text-color;
 }
 
+.footnote a:link { text-decoration: underline; }
+.footnote a:visited { text-decoration: underline; }
+.footnote a:hover { text-decoration: underline; }
+.footnote a:active { text-decoration: underline; }
+
 .rightSide {
   display: flex;
   align-items: center;
-  //flex-grow: 1;
   position: relative;
 }
 
@@ -102,16 +109,33 @@
   max-height: 640px;
   width: auto;
   height: auto;
-  z-index: 2;
+  z-index: 3;
 }
 
-.square {
+.circleOne {
   position: absolute;
-  top: 100px;
-  left: 20px;
-  z-index: 1;
+  top: 24%;
+  //left: 20px;
+  z-index: 2;
   background-color: Theme-colors.$accent-one-color;
-  width: 560px;
-  height: 480px;
+  //background-color: Theme-colors.$accent-two-color;
+  //width: 560px;
+  width: 500px;
+  height: 500px;
+  //border-radius: 500px;
+  color: Theme-colors.$background-color;
+}
+
+.circleTwo {
+  position: absolute;
+  top: 260px;
+  left: 280px;
+  z-index: 1;
+  //background-color: Theme-colors.$accent-one-color;
+  background-color: Theme-colors.$accent-two-color;
+  //width: 560px;
+  width: 320px;
+  height: 320px;
+  border-radius: 320px;
   color: Theme-colors.$background-color;
 }
