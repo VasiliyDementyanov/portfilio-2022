@@ -3,12 +3,12 @@
 
 header {
   background-color: Theme-colors.$background-color;
-  padding: 16px Paddings.$main-restrict-container-desktop 0;
-  //min-height: 5rem;
+  padding: 1vw Paddings.$main-restrict-container-desktop 0;
 }
 
 .mainHeader {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: baseline;
   font-family: 'Roboto', sans-serif;
@@ -22,8 +22,7 @@ header {
 }
 
 .logoText {
-  font-size: 20px;
-  //font-size: 1.5rem;
+  font-size: 1.2vw;
 }
 
 .mainNav ul {
@@ -41,19 +40,16 @@ header {
 }
 
 .contactMeSquare {
-  background-color: Theme-colors.$accent-two-color;
-  width: 180px;
-  height: 54px;
-  color: Theme-colors.$background-color;
+ background-color: Theme-colors.$accent-two-color;
+ width: 12vw;
+ height: 3vw;
+ color: Theme-colors.$background-color;
 }
 
 .mainNav a {
   color: inherit;
-  font-size: 28px;
-  padding: 0 16px;
-
-  //font-size: 2rem;
-  //padding: 0 1rem;
+  font-size: 1.8vw;
+  padding: 0 1vw;
 }
 
 .mainNav a:hover {
@@ -77,37 +73,55 @@ header {
 //   }
 // }
 
-@media only screen and (max-width: 800px) {
-  .toggleButton {
-    position: absolute;
-    right: 30px;
-    top: 25px;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 25px;
-    width: 30px;
-    cursor: pointer;
-    display: flex;
+@media only screen and (max-width: 850px) {
+  header {
+    padding: 4vw Paddings.$main-restrict-container-mobile 0;
   }
 
   .mainHeader {
     flex-direction: column;
-    align-items: flex-start;
+    //align-items: center;
   }
+
+  .toggleButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    
+    position: absolute;
+    right: Paddings.$main-restrict-container-mobile;
+    top: 4vw;
+    
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    
+  }
+
   .mainNav ul {
     flex-direction: column;
     align-items: flex-start;
     display: none;
   }
+
   .mainNav li {
     padding: 0.6rem 0;
   }
+
   .mainNav a {
     padding: 0;
+    font-size: 5.6vw;
   }
+
   .mainNav ul.active {
     display: flex;
   }
+
+  .contactMeSquare {
+    width: 40vw;
+    height: 10vw;
+   }
 
   .logoText h1 {
     visibility: hidden;
@@ -115,6 +129,7 @@ header {
   
   .logoText h1:before {
     content: "dv";
+    font-size: 7vw;
     visibility: visible;
   }
 }
