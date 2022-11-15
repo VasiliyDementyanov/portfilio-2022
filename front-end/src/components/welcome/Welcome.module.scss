@@ -6,7 +6,7 @@
   flex-grow: 1;
   justify-content: space-between;
   background-color: Theme-colors.$background-color;
-  padding: 16px Paddings.$main-restrict-container-desktop 0;
+  padding: 1vw Paddings.$main-restrict-container-desktop 0;
 }
 
 .leftSide {
@@ -25,31 +25,31 @@
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  gap: 8px;
+  gap: 0.5vw;
 }
 
 .helloEng {
-  font-size: 48px;
+  font-size: 2.5vw;
   color: Theme-colors.$main-text-color;
 }
 
 .helloJp {
-  font-size: 58px;
+  font-size: 3vw;
   color: Theme-colors.$accent-two-color;
 }
 
 .myNameEng {
-  font-size: 64px;
+  font-size: 3.4vw;
   color: Theme-colors.$accent-one-color;
 }
 
 .myNameJp {
-  font-size: 48px;
+  font-size: 2.5vw;
   color: Theme-colors.$accent-two-color;
 }
 
 .grade {
-  font-size: 64px;
+  font-size: 3.4vw;
   color: Theme-colors.$main-text-color;
 }
 
@@ -57,13 +57,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 1.4vw;
 }
 
 .stackText {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 56px;
+  font-size: 3vw;
   color: Theme-colors.$accent-one-color;
   text-align: center;
 }
@@ -73,21 +73,21 @@
   //flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 2vw;
 }
 
 .stackImages img {
-  max-width: 80px;
-  max-height: 80px;
+  width: 5vw;
+  height: 5vw;
 }
 
 .footnote {
   position: absolute;
-  bottom: 40px;
+  bottom: 2vw;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1vw;
   color: Theme-colors.$main-text-color;
 }
 
@@ -105,18 +105,17 @@
 }
 
 .photo {
-  max-width: 640px;
-  max-height: 640px;
+  width: 35vw;
+  height: 35vw;
   z-index: 3;
 }
 
 .square {
   position: absolute;
-  top: 20%;
   z-index: 2;
   background-color: Theme-colors.$accent-one-color;
-  width: 450px;
-  height: 450px;
+  width: 26vw;
+  height: 26vw;
   color: Theme-colors.$background-color;
 }
 
@@ -151,8 +150,8 @@
   }
 
   .stackImages img {
-    max-width: 20vw;
-    max-height: 20vw;
+    width: 20vw;
+    height: 20vw;
   }
 
   .stackText {
