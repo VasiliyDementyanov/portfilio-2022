@@ -57,8 +57,7 @@ const Welcome: FC = () => {
       </section>
       <section className={welcomeStyle.rightSide}>
         <img className={welcomeStyle.photo} src={photo} />
-        <section className={welcomeStyle.circleOne} />
-        {/* <section className={welcomeStyle.circleTwo} /> */}
+        <section className={welcomeStyle.square} />
       </section>
       <section className={welcomeStyle.footnote}>
         <p>

@@ -79,8 +79,6 @@
 .stackImages img {
   max-width: 80px;
   max-height: 80px;
-  width: auto;
-  height: auto;
 }
 
 .footnote {
@@ -102,40 +100,80 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  margin-top: 6vh;
 }
 
 .photo {
   max-width: 640px;
   max-height: 640px;
-  width: auto;
-  height: auto;
   z-index: 3;
 }
 
-.circleOne {
+.square {
   position: absolute;
-  top: 24%;
-  //left: 20px;
+  top: 20%;
   z-index: 2;
   background-color: Theme-colors.$accent-one-color;
-  //background-color: Theme-colors.$accent-two-color;
-  //width: 560px;
-  width: 500px;
-  height: 500px;
-  //border-radius: 500px;
+  width: 450px;
+  height: 450px;
   color: Theme-colors.$background-color;
 }
 
-.circleTwo {
-  position: absolute;
-  top: 260px;
-  left: 280px;
-  z-index: 1;
-  //background-color: Theme-colors.$accent-one-color;
-  background-color: Theme-colors.$accent-two-color;
-  //width: 560px;
-  width: 320px;
-  height: 320px;
-  border-radius: 320px;
-  color: Theme-colors.$background-color;
+@media only screen and (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftSide {
+    margin-top: 6vw;
+    gap: 8vh;
+  }
+  
+  .helloEng {
+    font-size: 8vw;
+  }
+  
+  .helloJp {
+    font-size: 10vw;
+  }
+  
+  .myNameEng {
+    font-size: 10vw;
+  }
+  
+  .myNameJp {
+    font-size: 8vw;
+  }
+
+  .grade {
+    font-size: 10vw;
+  }
+
+  .stackImages img {
+    max-width: 20vw;
+    max-height: 20vw;
+  }
+
+  .stackText {
+    font-size: 10vw;
+  }
+
+  .photo {
+    width: 90vw;
+    z-index: 3;
+  }
+
+  .square {
+
+    width: 66vw;
+    height: 66vw;
+  }
+
+  .footnote {
+    position: static;
+    font-size: 3vw;
+
+    margin: 3vw 0;
+  }
 }
