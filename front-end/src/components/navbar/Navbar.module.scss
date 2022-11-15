@@ -108,4 +108,13 @@ header {
   .mainNav ul.active {
     display: flex;
   }
+
+  .logoText h1 {
+    visibility: hidden;
+  }
+  
+  .logoText h1:before {
+    content: "dv";
+    visibility: visible;
+  }
 }
