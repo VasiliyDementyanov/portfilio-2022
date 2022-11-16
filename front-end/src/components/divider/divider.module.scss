@@ -1,7 +1,13 @@
 @use '../../utils/css-global/Theme-colors';
 
 .divider {
-    height: 4px;
+    height: 0.25vw;
     width: 50%;
     background-color: Theme-colors.$accent-one-color;;
+}
+
+@media only screen and (max-width: 850px) {
+  .divider {
+    height: 0.45vw;
   }
+}
