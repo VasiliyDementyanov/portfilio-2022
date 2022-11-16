@@ -4,11 +4,12 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 60vw;
     justify-content: space-between;
+    width: 100%;
+
 
     background-color: Theme-colors.$background-color;
-    margin: 40px 0 20px;
+    margin: 3.2vw 0 3vw;
 
     font-family: 'Roboto', sans-serif;
 }
@@ -16,12 +17,13 @@
 .head {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
+    //font-weight: bold;
+    font-weight: 500;
     color: Theme-colors.$main-text-color;
 }
 
 .projectName {
-    font-size: 38px;
+    font-size: 2.5vw;
 }
 
 .locationDuration {
@@ -29,7 +31,7 @@
     flex-direction: column;
     align-items: center;
 
-    font-size: 24px;
+    font-size: 1.5vw;
 }
 
 .thesesContainer {
@@ -43,17 +45,17 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0.6vw;
+    margin-bottom: 0.6vw;
 }
 
 .thesisLeft {
     margin-left: 2%;
-    width: 24%;
+    //width: 24%;
 }
 
 .thesisLeft span {
-    font-size: 32px;
+    font-size: 1.8vw;
     font-weight: normal;
 
     position: relative;
@@ -65,26 +67,91 @@
     height: 60%;
 
     top: 20%;
-    left: -8px;
+    left: -6%;
 
     display: inline-block;
-    border-right: 4px solid Theme-colors.$accent-two-color;
+    border-right: 0.25vw solid Theme-colors.$accent-two-color;
 }
 
 .thesisRight {
     width: 76%;
+    line-height: normal;
 }
 
 .thesesContainer li {
-    font-size: 32px;
+    font-size: 1.8vw;
     font-weight: 300;
 }
 
 .tech:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 1vw;
 }
 
 .techHeader {
-    font-size: 32px;
+    font-size: 1.8vw;
     font-weight: normal;
 }
+
+@media only screen and (max-width: 850px) {
+    .container {
+        margin: 8vw 0 8vw;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1vw;
+    }
+
+    .projectName {
+        font-size: 7vw;
+    }
+
+    .locationDuration {
+        align-items: flex-start;
+        font-size: 4vw;
+        gap: 1vw;
+        margin-bottom: 2vw;
+    }
+
+    .thesis {
+        flex-direction: column;
+
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .thesisLeft {
+        margin-left: 2%;
+        margin-bottom: 1vw;
+        //width: 24%;
+    }
+
+    .thesisLeft span {
+        font-size: 3.8vw;
+    }
+
+    .thesisLeft span::before {
+        content: "";
+        position: absolute;
+        height: 60%;
+    
+        top: 20%;
+        left: -6%;
+    
+        display: inline-block;
+        border-right: 0.45vw solid Theme-colors.$accent-two-color;
+    }
+
+    .thesisRight {
+        margin-left: 2%;
+    }
+
+    .thesesContainer li {
+        font-size: 3.8vw;
+    }
+
+    .techHeader {
+        font-size: 3.8vw;
+    }
+  }

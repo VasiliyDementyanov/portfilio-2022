@@ -4,7 +4,7 @@ export const workPlaces: WorkPlace[] = [
   {
     projectName: 'Additional software for call center',
     location: 'Saints-Petersburg, Russia',
-    duration: '09/2020-09/2022',
+    duration: '09/2020 - 09/2022',
     theses: [
       {
         name: 'Company:',
@@ -54,25 +54,21 @@ export const workPlaces: WorkPlace[] = [
     ]
   },
   {
-    projectName: 'Additional software for call center',
-    location: 'Saints-Petersburg, Russia',
-    duration: '09/2020-09/2022',
+    projectName: 'Lala lala',
+    location: 'Yekaterinburg, Russia',
+    duration: '09/2018 - 09/2019',
     theses: [
       {
         name: 'Company',
-        descriptionLines: ['Special Technology Center']
+        descriptionLines: ['Lala company']
       },
       {
         name: 'Position',
-        descriptionLines: ['Full Stack Developer']
+        descriptionLines: ['Back end Developer']
       },
       {
         name: 'Description',
-        descriptionLines: [
-          'Development of a corporate solution for assessing the quality of service for call center operators.',
-          `The software is a convinient environment, where you can listen (media player), read (transcribed text syncrinised with audio), evaluate operator's job and give him feedback.`,
-          'Helped other teams with their projects.'
-        ]
+        descriptionLines: ['Development of a lalala', `The software is a lalala`]
       },
       {
         name: 'Responsibilities',
