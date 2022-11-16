@@ -19,9 +19,8 @@ const EducationCard: FC<Props> = ({
         </div>
       </div>
       <ul>
-        <li>{universityName}</li>
-        <li>{faculty}</li>
         <li>{degree}</li>
+        <li>{faculty}</li>
         <li>{major}</li>
       </ul>
     </div>
