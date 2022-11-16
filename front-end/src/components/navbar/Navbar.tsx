@@ -10,25 +10,28 @@ const Navbar: FC = () => {
 
   return (
     <header className={navbarStyles.mainHeader}>
-      <Link onClick={handleLinkClick} to="/" className={navbarStyles.logo}>
-        <div className={navbarStyles.logoText}>
-          <h1>dementyanov</h1>
+      <section className={navbarStyles.logoAndButton}>
+        <Link onClick={handleLinkClick} to="/" className={navbarStyles.logo}>
+          <div className={navbarStyles.logoText}>
+            <h1>dementyanov</h1>
+          </div>
+        </Link>
+        <div
+          className={
+            isNavExpanded
+              ? `${navbarStyles.toggleButton} ${navbarStyles.active}`
+              : navbarStyles.toggleButton
+          }
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
+          <span className={navbarStyles.bar}></span>
+          <span className={navbarStyles.bar}></span>
+          <span className={navbarStyles.bar}></span>
         </div>
-      </Link>
-      <div
-        className={
-          isNavExpanded
-            ? `${navbarStyles.toggleButton} ${navbarStyles.active}`
-            : navbarStyles.toggleButton
-        }
-        onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
-        }}
-      >
-        <span className={navbarStyles.bar}></span>
-        <span className={navbarStyles.bar}></span>
-        <span className={navbarStyles.bar}></span>
-      </div>
+      </section>
+
       <nav className={navbarStyles.mainNav}>
         <ul className={isNavExpanded ? `${navbarStyles.active}` : ''}>
           <li>
