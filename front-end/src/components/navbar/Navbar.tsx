@@ -44,11 +44,11 @@ const Navbar: FC = () => {
               work
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link onClick={handleLinkClick} to="/">
               about
             </Link>
-          </li>
+          </li> */}
           <li className={navbarStyles.contactMeSquare}>
             <Link onClick={handleLinkClick} to="/contactme">
               contact me
