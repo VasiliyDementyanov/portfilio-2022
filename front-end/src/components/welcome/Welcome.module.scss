@@ -122,32 +122,41 @@
 @media only screen and (max-width: 850px) {
   .container {
     flex-direction: column;
-    padding: 1vw Paddings.$main-restrict-container-mobile 0;
+    padding: 2vw Paddings.$main-restrict-container-mobile 0;
   }
 
   .leftSide {
     margin-top: 6vw;
     gap: 8vh;
   }
+
+  .greetings {
+    gap: 2vw;
+  }
   
   .helloEng {
-    font-size: 8vw;
+    //font-size: 8vw;
+    font-size: 6vw;
   }
   
   .helloJp {
-    font-size: 10vw;
+    //font-size: 10vw;
+    font-size: 7vw;
   }
   
   .myNameEng {
-    font-size: 10vw;
+    //font-size: 10vw;
+    font-size: 7vw;
   }
   
   .myNameJp {
-    font-size: 8vw;
+    //font-size: 8vw;
+    font-size: 6vw;
   }
 
   .grade {
-    font-size: 10vw;
+    //font-size: 10vw;
+    font-size: 7vw;
   }
 
   .stack {
@@ -155,12 +164,13 @@
   }
 
   .stackText {
-    font-size: 10vw;
+    //font-size: 10vw;
+    font-size: 7vw;
   }
 
   .stackImages img {
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
   }
 
   .photo {
