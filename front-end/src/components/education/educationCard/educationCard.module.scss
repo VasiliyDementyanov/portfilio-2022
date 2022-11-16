@@ -11,13 +11,14 @@
     margin: 3.2vw 0 1vw;
 
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
     color: Theme-colors.$main-text-color;
 }
 
 .head {
     display: flex;
     justify-content: space-between;
+
+    font-weight: 500;
 }
 
 .universityName {
@@ -42,6 +43,8 @@
     font-weight: 300;
 
     position: relative;
+
+    line-height: normal;
 }
 
 .container li::before {
