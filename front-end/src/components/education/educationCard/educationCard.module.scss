@@ -1,5 +1,6 @@
 @use '../../../utils/css-global/Theme-colors';
 @use '../../../utils/css-global/Paddings';
+@use '../../../utils/css-global/Various-vars';
 
 .container {
     display: flex;
@@ -36,7 +37,7 @@
 .container li {
     margin-top: 1vw;
     margin-bottom: 1vw;
-    margin-left: 2%;
+    margin-left: 1.6vw;
     width: 60%;
 
     font-size: 1.8vw;
@@ -53,7 +54,7 @@
     height: 60%;
 
     top: 20%;
-    left: -1%;
+    left: -0.6vw;
 
     display: inline-block;
     border-right: 0.25vw solid Theme-colors.$accent-two-color;
@@ -83,7 +84,7 @@
     .container li {
         margin-top: 2vw;
         margin-bottom: 2vw;
-        margin-left: 2%;
+        margin-left: 4vw;
 
         font-size: 4vw;
         font-weight: 300;
@@ -100,6 +101,6 @@
         left: -1.5vw;
     
         display: inline-block;
-        border-right: 0.5vw solid Theme-colors.$accent-two-color;
+        border-right: Various-vars.$before-element-width solid Theme-colors.$accent-two-color;
     }
   }

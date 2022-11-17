@@ -1,5 +1,6 @@
 @use '../../../utils/css-global/Theme-colors';
 @use '../../../utils/css-global/Paddings';
+@use '../../../utils/css-global/Various-vars';
 
 .container {
     display: flex;
@@ -140,7 +141,7 @@
         left: -6%;
     
         display: inline-block;
-        border-right: 0.6vw solid Theme-colors.$accent-two-color;
+        border-right: Various-vars.$before-element-width solid Theme-colors.$accent-two-color;
     }
 
     .thesisRight {

@@ -1,4 +1,5 @@
 @use '../../utils/css-global/Theme-colors';
+@use '../../utils/css-global/Various-vars';
 
 .divider {
     height: 0.25vw;
@@ -8,6 +9,6 @@
 
 @media only screen and (max-width: 850px) {
   .divider {
-    height: 0.6vw;
+    height: Various-vars.$before-element-width;
   }
 }
