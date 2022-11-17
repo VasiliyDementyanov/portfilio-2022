@@ -42,7 +42,7 @@ const ContactMe: FC = () => {
     {
       black: linkedinBlack,
       colored: linkedinColored,
-      link: 'https://www.linkedin.com/in/alexandr-ilinykh-2a00451a4/',
+      link: 'https://www.linkedin.com/in/vasilii-dementianov-a02630256/',
       alt: 'linkedin'
     }
   ];
