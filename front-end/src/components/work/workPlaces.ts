@@ -8,7 +8,7 @@ export const workPlaces: WorkPlace[] = [
     theses: [
       {
         name: 'Company:',
-        descriptionLines: ['Special Technology Center']
+        descriptionLines: ['Software solutions']
       },
       {
         name: 'Position:',
@@ -17,16 +17,16 @@ export const workPlaces: WorkPlace[] = [
       {
         name: 'Description:',
         descriptionLines: [
-          'Development of a corporate solution for assessing the quality of service for call center operators.',
-          `The software is a convinient environment, where you can listen (media player), read (transcribed text syncrinised with audio), evaluate operator's job and give him feedback.`,
-          'Helped other teams with their projects.'
+          'Development of a corporate solution for assessing the quality of service for call center operators',
+          `The software is a convinient environment, where you can listen (media player), read (transcribed text syncrinised with audio), evaluate operator's job and give him feedback`,
+          'Helped other teams with their projects'
         ]
       },
       {
         name: 'Responsibilities:',
         descriptionLines: [
-          'Communication with users;',
-          'Implementing new solutions on all development layers (front-end/back-end/deployment);',
+          'Communication with users',
+          'Implementing new solutions on all development layers (front-end/back-end/deployment)',
           'Bug-fixing',
           'Deploying software to production environment'
         ]
@@ -35,73 +35,108 @@ export const workPlaces: WorkPlace[] = [
     technologies: [
       {
         name: 'Front-end:',
-        descriptionLines: ['React (TypeScript); HTML, CSS (SCSS); Redux; React Router.']
+        descriptionLines: ['React (TypeScript), HTML, CSS (SCSS), Redux, React Router']
       },
       {
         name: 'Back-end:',
-        descriptionLines: ['Go; Postgres; Redis; Bolt; RabbitMQ;']
+        descriptionLines: ['Go, Postgres, Redis, GraphQL, Bolt, RabbitMQ']
       },
       {
         name: 'Microservice Architecture:',
-        descriptionLines: ['HTTP, gRPC; API Gateway, Nginx proxy; Linux daemons;']
+        descriptionLines: ['HTTP, gRPC, API Gateway, nginx proxy, Linux daemons']
       },
       {
         name: 'DevOps:',
         descriptionLines: [
-          'Linux OS structure and tools; Ansible auto-installators (deb packages); Docker, Docker Compose; Virtual machines; Git.'
+          'Linux OS structure and tools, ansible auto-installators (deb packages)',
+          'Docker, Docker Compose',
+          'Virtual machines, Git'
         ]
       }
     ]
   },
   {
-    projectName: 'Lala lala',
+    projectName: 'Software for monitoring systems',
     location: 'Yekaterinburg, Russia',
-    duration: '09/2018 - 09/2019',
+    duration: '08/2018 - 03/2019',
     theses: [
       {
         name: 'Company',
-        descriptionLines: ['Lala company']
+        link: 'http://www.uwca.ru/',
+        descriptionLines: ['Ural factory of civil aviation']
       },
       {
         name: 'Position',
-        descriptionLines: ['Back end Developer']
+        descriptionLines: ['C++ Developer']
       },
       {
         name: 'Description',
-        descriptionLines: ['Development of a lalala', `The software is a lalala`]
+        descriptionLines: [
+          'Development of сustomizable multi-window application for reading, displaying (in different forms) information from monitoring systems.'
+        ]
       },
       {
         name: 'Responsibilities',
         descriptionLines: [
-          'Communication with users;',
-          'Implementing new solutions on all development layers (front-end/back-end/deployment);',
-          'Bug-fixing',
-          'Deploying software to production environment'
+          'Project architecture development',
+          'User interface prototyping and implementation',
+          'Accompanying of develop from start to release'
         ]
       }
     ],
     technologies: [
       {
-        name: 'Front-end:',
-        descriptionLines: ['React (TypeScript); HTML, CSS (SCSS); Redux; React Router.']
+        name: 'Platforms:',
+        descriptionLines: ['Qt, Debian']
       },
       {
-        name: 'Back-end:',
-        descriptionLines: ['Go; Postgres; Redis; Bolt; RabbitMQ;']
+        name: 'Languages & Technologies:',
+        descriptionLines: ['C++, SQLite, Virtual machines, TortoiseSVN']
+      }
+    ]
+  },
+  {
+    projectName: 'Software for sensor system',
+    location: 'Yekaterinburg, Russia',
+    duration: '04/2017 - 08/2018',
+    theses: [
+      {
+        name: 'Company',
+        link: 'https://www.npoa.ru/',
+        descriptionLines: ['NPOA']
       },
       {
-        name: 'Microservice Architecture:',
-        descriptionLines: ['HTTP, gRPC; API Gateway, Nginx proxy; Linux daemons;']
+        name: 'Position',
+        descriptionLines: ['C / C++ C Engineer developer']
       },
       {
-        name: 'DevOps:',
+        name: 'Description',
         descriptionLines: [
-          'Linux OS structure and tools;',
-          'Ansible auto-installators (deb packages);',
-          'Docker, Docker Compose;',
-          'Virtual machines;',
-          'Git.'
+          'Development embedded software for microcontrollers reading data from various sensors',
+          'Development desktop software for managing microcontrollers bus and displaying data from them'
         ]
+      },
+      {
+        name: 'Responsibilities',
+        descriptionLines: [
+          'Exchange protocol development',
+          'Microcontrollers control logic development',
+          'User interface prototyping and implementation'
+        ]
+      }
+    ],
+    technologies: [
+      {
+        name: 'Platforms:',
+        descriptionLines: ['Qt, Debian']
+      },
+      {
+        name: 'Tools:',
+        descriptionLines: ['QtCreator, Code Composer Studio']
+      },
+      {
+        name: 'Languages & Technologies:',
+        descriptionLines: ['C, C++, Virtual machines, Git']
       }
     ]
   }

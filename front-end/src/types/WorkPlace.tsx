@@ -8,5 +8,6 @@ export interface WorkPlace {
 
 interface Thesis {
   name: string;
+  link?: string;
   descriptionLines: string[];
 }
