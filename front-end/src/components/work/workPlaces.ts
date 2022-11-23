@@ -62,7 +62,6 @@ export const workPlaces: WorkPlace[] = [
     theses: [
       {
         name: 'Company',
-        link: 'http://www.uwca.ru/',
         descriptionLines: ['Ural factory of civil aviation']
       },
       {
@@ -102,7 +101,6 @@ export const workPlaces: WorkPlace[] = [
     theses: [
       {
         name: 'Company',
-        link: 'https://www.npoa.ru/',
         descriptionLines: ['NPOA']
       },
       {

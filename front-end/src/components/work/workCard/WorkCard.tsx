@@ -26,15 +26,9 @@ const WorkCard: FC<Props> = ({
             </div>
             <div className={workCardStyles.thesisRight}>
               <ul>
-                {th.hasOwnProperty('link') && th.descriptionLines.length === 1 ? (
-                  <li>
-                    <a href={th.link} target="_blank" rel="noreferrer">
-                      {th.descriptionLines[0]}
-                    </a>
-                  </li>
-                ) : (
-                  th.descriptionLines.map((d) => <li>{d}</li>)
-                )}
+                {th.descriptionLines.map((d) => (
+                  <li>{d}</li>
+                ))}
               </ul>
             </div>
           </div>
