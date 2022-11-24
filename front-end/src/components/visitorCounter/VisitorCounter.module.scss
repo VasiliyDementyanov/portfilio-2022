@@ -1,0 +1,21 @@
+@use '../../utils/css-global/Theme-colors';
+@use '../../utils/css-global/Paddings';
+
+.container {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content:center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+
+    font-size: 1.6vw;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .container {
+        font-size: 4vw;
+    }
+}
