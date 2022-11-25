@@ -49,12 +49,18 @@ const images: ContactMeImage[] = [
 const ContactMe: FC = () => {
   useEffect(() => {
     images.forEach((image) => {
-      const imgB = new Image();
-      const imgC = new Image();
+      const imgBlack = new Image();
+      const imgColored = new Image();
 
-      imgB.src = image.black;
-      imgC.src = image.colored;
+      imgBlack.src = image.black;
+      imgColored.src = image.colored;
     });
+
+    const githubImgBlack = new Image();
+    const githubImgColored = new Image();
+
+    githubImgBlack.src = githubBlack;
+    githubImgColored.src = githubColored;
   }, []);
 
   return (
