@@ -10,7 +10,7 @@ import goColored from './images/go_colored.png';
 import postgresqlBlack from './images/postgresql_black.png';
 import postgresqlColored from './images/postgresql_colored.png';
 
-import photo from './images/photo.png';
+import photo from './images/photo-800-min.png';
 
 const images: string[] = [
   reactBlack,
