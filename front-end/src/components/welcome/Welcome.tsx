@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import welcomeStyle from './Welcome.module.scss';
 
 import reactBlack from './images/react_black.png';
@@ -12,7 +12,23 @@ import postgresqlColored from './images/postgresql_colored.png';
 
 import photo from './images/photo.png';
 
+const images: string[] = [
+  reactBlack,
+  reactColored,
+  goBlack,
+  goColored,
+  postgresqlBlack,
+  postgresqlColored
+];
+
 const Welcome: FC = () => {
+  useEffect(() => {
+    images.forEach((image) => {
+      const img = new Image();
+      img.src = image;
+    });
+  }, []);
+
   return (
     <section className={welcomeStyle.container}>
       <section className={welcomeStyle.leftSide}>

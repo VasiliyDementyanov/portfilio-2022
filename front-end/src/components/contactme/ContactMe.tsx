@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 
 import { ContactMeImage } from '../../types/ContactMeImage';
 
@@ -19,33 +19,43 @@ import linkedinColored from './images/linkedin_colored.png';
 import githubBlack from './images/github_black.png';
 import githubColored from './images/github_colored.png';
 
+const images: ContactMeImage[] = [
+  {
+    black: emailBlack,
+    colored: emailColored,
+    link: 'mailto:vv.dementianov@gmail.com',
+    alt: 'email'
+  },
+  {
+    black: telegramBlack,
+    colored: telegramColored,
+    link: 'https://t.me/dementianov',
+    alt: 'telegram'
+  },
+  {
+    black: whatsappBlack,
+    colored: whatsappColored,
+    link: 'https://wa.me/79222170300',
+    alt: 'whatsapp'
+  },
+  {
+    black: linkedinBlack,
+    colored: linkedinColored,
+    link: 'https://www.linkedin.com/in/vasilii-dementianov-a02630256/',
+    alt: 'linkedin'
+  }
+];
+
 const ContactMe: FC = () => {
-  const images: ContactMeImage[] = [
-    {
-      black: emailBlack,
-      colored: emailColored,
-      link: 'mailto:vv.dementianov@gmail.com',
-      alt: 'email'
-    },
-    {
-      black: telegramBlack,
-      colored: telegramColored,
-      link: 'https://t.me/dementianov',
-      alt: 'telegram'
-    },
-    {
-      black: whatsappBlack,
-      colored: whatsappColored,
-      link: 'https://wa.me/79222170300',
-      alt: 'whatsapp'
-    },
-    {
-      black: linkedinBlack,
-      colored: linkedinColored,
-      link: 'https://www.linkedin.com/in/vasilii-dementianov-a02630256/',
-      alt: 'linkedin'
-    }
-  ];
+  useEffect(() => {
+    images.forEach((image) => {
+      const imgB = new Image();
+      const imgC = new Image();
+
+      imgB.src = image.black;
+      imgC.src = image.colored;
+    });
+  }, []);
 
   return (
     <section className={contactMeStyle.container}>
