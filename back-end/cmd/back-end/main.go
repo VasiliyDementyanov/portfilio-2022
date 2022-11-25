@@ -24,6 +24,7 @@ func main() {
 	e.Static("/education", "dist")
 	e.Static("/work", "dist")
 	e.Static("/contactme", "dist")
+	e.Static("/visitor-counter", "dist")
 
 	e.AutoTLSManager.Cache = autocert.DirCache("/opt/portfolio-2022/.certificates")
 	e.Use(middleware.Recover())
