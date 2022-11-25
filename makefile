@@ -33,5 +33,6 @@ copy-on-server:
 	sshpass -p "${SERVER_PASSWORD}" rsync -ae "ssh -p ${SERVER_PORT}" --exclude=front-end/node_modules --progress ./ ${SERVER_USER}@${SERVER_IP}:/opt/portfolio-2022 --delete
 
 start-docker-on-server:
-	sshpass -p "${SERVER_PASSWORD}" ssh -t ${SERVER_USER}@${SERVER_IP} -p ${SERVER_PORT} 'cd /opt/portfolio-2022;docker-compose down'
+	#sshpass -p "${SERVER_PASSWORD}" ssh -t ${SERVER_USER}@${SERVER_IP} -p ${SERVER_PORT} 'cd /opt/portfolio-2022;docker-compose down'
 	sshpass -p "${SERVER_PASSWORD}" ssh -t ${SERVER_USER}@${SERVER_IP} -p ${SERVER_PORT} 'cd /opt/portfolio-2022;docker-compose up -d --build'
+	sshpass -p "${SERVER_PASSWORD}" ssh -t ${SERVER_USER}@${SERVER_IP} -p ${SERVER_PORT} 'cd /opt/portfolio-2022;docker image prune --filter label=stage=builder --force'
