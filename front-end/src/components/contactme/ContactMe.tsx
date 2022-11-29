@@ -41,7 +41,7 @@ const images: ContactMeImage[] = [
   {
     black: linkedinBlack,
     colored: linkedinColored,
-    link: 'https://www.linkedin.com/in/vasilii-dementianov-a02630256/',
+    link: 'https://www.linkedin.com/in/vasilii-dementianov/',
     alt: 'linkedin'
   }
 ];
